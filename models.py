@@ -12,7 +12,7 @@ class Usuario(Base):
     email = Column("email", String)
     senha = Column("senha", String)
 
-    def __init__(self, nome, senha, email):
+    def __init__(self, nome, email, senha):
         self.nome = nome
         self.email = email
         self.senha = senha

@@ -7,3 +7,7 @@ class UserSchema(BaseModel):
 
 class NotaSchema(BaseModel):
     nota: str
+
+class LoginSchema(BaseModel):
+    email: str
+    senha: str
