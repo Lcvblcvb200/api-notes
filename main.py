@@ -15,5 +15,7 @@ REFRESH_TOKEN_EXPIRE_DAYS = int(os.getenv("REFRESH_TOKEN_EXPIRE_DAYS"))
 app = FastAPI()
 
 from authroutes import authrouter
+from notesroutes import noterouter
 
+app.include_router(noterouter)
 app.include_router(authrouter)
